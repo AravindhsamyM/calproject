@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="emi.css">
+	<script type="text/javascript">
+		function fun()
+	{
+		var name=document.getElementById('p').value;
+		var amt=document.getElementById('q').value;
+		var month=document.getElementById('r').value;
+		amt=+amt;
+		month=+month;
+
+		if(name!="" && amt!="" && month!="")
+		{
+		
+			document.getElementById("x").innerHTML="Welcome  Mr/Mrs. "+name;
+
+			document.getElementById("y").innerHTML="<table border='2'cellpadding='10px' cellspacing='0px' class='tbl'><tr class='tbr'><td>Bank Name</td><td>Personal Loan</td><td>Buisness Loan</td><td>Home Loan</td></tr><tr><td>HDFC</td><td id='id'></td><td id='id2'></td><td id='id3'></td></tr><tr><td>ICIC</td><td id='id4'></td><td id='id5'></td><td id='id6'></td></tr><tr><td>AXIS</td><td id='id7'></td><td id='id8'></td><td id='id9'></td></tr></table>";
+			document.getElementById('ab').innerHTML="";
+		}
+		else
+		{
+			document.getElementById('ab').innerHTML="(Please Fill all The details...)";
+		}
+				
+
+		let interest=amt*0.18;
+		let repay=amt+interest;
+		let emi=repay/month;
+
+		document.getElementById('id').innerHTML=emi.toFixed(3);
+
+		let interest2=amt*0.14;
+		let repay2=amt+interest2;
+		let emi2=repay2/month;
+
+		document.getElementById('id2').innerHTML=emi2.toFixed(3);
+
+		let interest3=amt*0.15;
+		let repay3=amt+interest3;
+		let emi3=repay3/month;
+
+		document.getElementById('id3').innerHTML=emi3.toFixed(3);
+
+		let interest4=amt*0.18;
+		let repay4=amt+interest3;
+		let emi4=repay4/month;
+
+		document.getElementById('id4').innerHTML=emi4.toFixed(3);
+
+		let interest5=amt*0.03;
+		let repay5=amt+interest5;
+		let emi5=repay5/month;
+
+		document.getElementById('id5').innerHTML=emi5.toFixed(3);
+
+		let interest6=amt*0.21;
+		let repay6=amt+interest6;
+		let emi6=repay6/month;
+
+		document.getElementById('id6').innerHTML=emi6.toFixed(3);
+
+		let interest7=amt*0.22;
+		let repay7=amt+interest7;
+		let emi7=repay7/month;
+
+		document.getElementById('id7').innerHTML=emi7.toFixed(3);
+
+		let interest8=amt*0.06;
+		let repay8=amt+interest8;
+		let emi8=repay8/month;
+
+		document.getElementById('id8').innerHTML=emi8.toFixed(3);
+
+		let interest9=amt*0.13;
+		let repay9=amt+interest9;
+		let emi9=repay9/month;
+
+		document.getElementById('id9').innerHTML=emi9.toFixed(3);
+
+	}
+	function fun2()
+	{
+		document.getElementById("x").innerHTML="";
+		document.getElementById("y").innerHTML="";
+		document.getElementById('ab').innerHTML="";
+	}
+	function im()
+	{
+		document.getElementById('im1').setAttribute("src","img4.jpeg");
+
+	}
+	function im2()
+	{
+		document.getElementById('im1').setAttribute("src","img5.jpeg");
+
+	}function im3()
+	{
+		document.getElementById('im2').setAttribute("src","img4.jpeg");
+
+	}
+	function im4()
+	{
+		document.getElementById('im2').setAttribute("src","img3.jpeg");
+
+	}
+	function q2()
+	{
+		document.getElementById('p2').setAttribute("src","img1.jpeg");
+
+	}
+	function r2()
+	{
+		document.getElementById('p2').setAttribute("src","img2.jpeg");
+
+	}
+	function q1()
+	{
+		document.getElementById('p1').setAttribute("src","img2.jpeg");
+
+	}
+	function r1()
+	{
+		document.getElementById('p1').setAttribute("src","img1.jpeg");
+
+	}
+
+	</script>
+</head>
+<body>
+	<div>
+	<div class="header">
+		<img src="img2.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p2" onmouseover="q2()" onmouseleave="r2()">
+		<h2 style="font-size: 80px;font-style: oblique;color: grey;" class="font"><ins>ABC Pvt.,Ltd.</ins></h2>  <br>  "Your Trusted Partner..."   <br>Hope is not a Financial Plan....!  
+		 <img src="img1.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p1" onmouseover="q1()" onmouseleave="r1()">
+	</div>
+	
+
+	<div class="navbar">
+
+		<div class="navbar1" style="text-align: center;">
+			<br>
+			<div id="google_translate_element" style="border: 1px ;background: mediumblue;"></div>
+		</div>
+		<div style="background: royalblue;font-style: italic;font-size:20px; "><h2><marquee>"An Investment in Knowledge pays the best interest...!!"</marquee></h2></div>
+		<div class="navbar3" style="text-align: center;">
+			<br><br>
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Acheivements</a>
+			<a href="">Contacts</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<br><br><br>
+			<img src="img5.jpeg" width="90%" style="margin-left: 5%;" id="im1" onmouseover="im()" onmouseleave="im2()"><br><br><br>
+			<a href="agecal.html">Age Calculator</a><br><br><br><br><br>
+			<a href="emi.html">EMI Calculator</a><br><br><br><br><br>
+			<a href="sim.html">Simple Interest Calculator</a><br><br><br><br><br>
+			<a href="comp.html">Compound Interest Calculator</a><br><br><br><br><br>
+			<img src="img3.jpeg" width="90%" style="margin-left: 5%;" id="im2" onmouseover="im3()" onmouseleave="im4()">
+			<br><br><br><br><br><br><br>
+<div class="quot"><h2>"Do not focus on money..</h2><h1>instead FOCUS on a PROBLEM...!"</h1></div>
+		</div>
+
+
+		<div class="main">
+<br><br>
+			<form class="frm"><br><ins style="color: springgreen;font-size: 40px;">EMI Calculator</ins><br><br><br>
+	Enter Name:<input type="text" name="" id="p"><p id="bc"></p><br><br>
+
+	Enter Loan Amount:<input type="text" name="" id="q"><p id="cd"></p><br><br>
+
+	Select Due Period:<select id="r">
+		<option value="">--Select--</option>
+		<option value="12">12</option>
+		<option value="24">24</option>
+		<option value="36">36</option>
+	</select><p id="de"></p><br><br>
+
+	<input type="button" name="" value="Submit" onclick="fun()" class="but">
+	<input type="reset" name="" value="cancel" class="but" onclick="fun2()">
+	<br><p id="ab"></p>
+	<br><br><br><br>
+	<h2 id="x" style="color: orange;"></h2><br>
+	<p id="y"></p>
+</form>
+
+
+			</div>
+		</div>
+		<div class="foot"><h2>You are the Root of your Financial Success </h2><h1>Or Failure..,</h1>
+</div>
+		<div class="footer">Copyright@2017--Abc.advisors.co.in</div>
+</body>
+</html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>

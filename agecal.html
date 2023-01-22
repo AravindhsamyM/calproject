@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="agecal.css">
+	<script type="text/javascript">
+		function ab()
+		{
+			var a=document.getElementById("x").value;
+			a=+a;
+			var b=2022-a;
+			
+			if (a=="")
+			{
+				document.getElementById('id').innerHTML="(Please Enter..)";
+			}
+			else if(a <=2022 && a>=1700)
+			{
+				document.getElementById('id1').innerHTML="Your Age is "+b;
+				document.getElementById('id').innerHTML="";
+			}
+			else
+			{
+				document.getElementById('id1').innerHTML=" You have entered Invalid Year";
+				document.getElementById('id').innerHTML="";
+			}
+		}
+		 function fun()
+		{
+			
+			document.getElementById('id1').innerHTML="";
+			document.getElementById('id').innerHTML="";
+
+		}
+		function im()
+	{
+		document.getElementById('im1').setAttribute("src","img4.jpeg");
+
+	}
+	function im2()
+	{
+		document.getElementById('im1').setAttribute("src","img5.jpeg");
+
+	}function im3()
+	{
+		document.getElementById('im2').setAttribute("src","img4.jpeg");
+
+	}
+	function im4()
+	{
+		document.getElementById('im2').setAttribute("src","img3.jpeg");
+
+	}
+	function q()
+	{
+		document.getElementById('p').setAttribute("src","img1.jpeg");
+
+	}
+	function r()
+	{
+		document.getElementById('p').setAttribute("src","img2.jpeg");
+
+	}
+	function q1()
+	{
+		document.getElementById('p1').setAttribute("src","img2.jpeg");
+
+	}
+	function r1()
+	{
+		document.getElementById('p1').setAttribute("src","img1.jpeg");
+
+	}
+	
+	</script>
+</head>
+<body>
+	<div class="flex">
+	<div class="header">
+		<br><br><br><br>
+		<img src="img2.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p" onmouseover="q()" onmouseleave="r()">
+		<h2 style="font-size: 80px;font-style: oblique;color: grey;" class="font"><ins>ABC Pvt.,Ltd.</ins></h2>  <br>  "Your Trusted Partner..."   <br>Hope is not a Financial Plan....!  
+		 <img src="img1.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p1" onmouseover="q1()" onmouseleave="r1()">
+	</div>
+	
+
+	<div class="navbar">
+
+		<div class="navbar1" style="text-align: center;">
+			<br>
+			<div id="google_translate_element" style="border: 1px ;background: mediumblue;"></div>
+		</div>
+		<div style="background: royalblue;font-style: italic;font-size:20px; "><h2><marquee>"An Investment in Knowledge pays the best interest...!!"</marquee></h2></div>
+		<div class="navbar3" style="text-align: center;">
+			<br><br>
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Acheivements</a>
+			<a href="">Contacts</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<br><br><br>
+			<img src="img5.jpeg" width="90%" style="margin-left: 5%;" id="im1" onmouseover="im()" onmouseleave="im2()"><br><br><br>
+			<a href="agecal.html">Age Calculator</a><br><br><br><br><br>
+			<a href="emi.html">EMI Calculator</a><br><br><br><br><br>
+			<a href="sim.html">Simple Interest Calculator</a><br><br><br><br><br>
+			<a href="comp.html">Compound Interest Calculator</a><br><br><br><br><br>
+			<img src="img3.jpeg" width="90%" style="margin-left: 5%;" id="im2" onmouseover="im3()" onmouseleave="im4()">
+			<br><br><br><br><br><br><br><br>
+<div class="quot"><h2>"Do not focus on money..</h2><h1>instead FOCUS on a PROBLEM...!"</h1></div>
+		</div>
+		<div class="main">
+			<br><br><br><br>
+			<form class="frm">
+				<br><ins style="color: springgreen;font-size: 40px;">Age Calculator</ins><br><br>
+			Enter your Birth year:<input type="text" name="" id="x">
+			<br><br><br>
+
+	<input type="button" name="" value="Calculate" onclick="ab()" class="but">
+	<input type="reset" name="" value="Reset" onclick="fun()" class="but">
+	<p id="id"></p>
+</form>
+<br><br><br>
+<h2 id="id1" style="color: darkred;'font-size: 40px;"></h2>
+
+			</div>
+		</div>
+		<div class="foot"><h2>You are the Root of your Financial Success </h2><h1>Or Failure..,</h1>
+</div>
+		<div class="footer">Copyright@2017--Abc.advisors.co.in</div>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>

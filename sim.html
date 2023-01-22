@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="sim.css">
+
+	<script type="text/javascript">
+		function fun()
+		{
+			var a=document.getElementById('x').value;
+			var b=document.getElementById('y').value;
+			a=+a;
+			b=+b;
+			if(a!="" && b!="")
+			{
+			document.getElementById('print').innerHTML="<table border='2' cellpadding='10px' cellspacing='0px' class='tbl'><tr class='tbr'><td>Month</td><td>Amount</td><td>Interest</td><td>Total Amount</td></tr><tr><td>1</td><td id='a1'></td><td id='b1'></td><td id='c1'></td></tr><tr><td>2</td><td id='a2'></td><td id='b2'></td><td id='c2'></td></tr><tr><td>3</td><td id='a3'></td><td id='b3'></td><td id='c3'></td></tr><tr><td>4</td><td id='a4'></td><td id='b4'></td><td id='c4'></td></tr><tr><td>5</td><td id='a5'></td><td id='b5'></td><td id='c5'></td></tr><tr><td>6</td><td id='a6'></td><td id='b6'></td><td id='c6'></td></tr><tr><td>7</td><td id='a7'></td><td id='b7'></td><td id='c7'></td></tr><tr><td>8</td><td id='a8'></td><td id='b8'></td><td id='c8'></td></tr><tr><td>9</td><td id='a9'></td><td id='b9'></td><td id='c9'></td></tr><tr><td>10</td><td id='a0'></td><td id='b0'></td><td id='c0'></td></tr></table> <br><br> <table border='2' cellpadding='10px' cellspacing='0px' class='tbl2'><tr class='tbr'><td>Total Amount Deposited</td><td id='id'></td></tr><tr><td>Total Interest</td><td id='id2'></td></tr><tr><td>Net Pay</td><td id='id3'></td></tr><tr><td>Net Profit Earned</td><td id='id4'></td></tr></table>"
+			document.getElementById('print1').innerHTML="";
+		}
+		else
+		{
+			document.getElementById('print1').innerHTML="(Please Fill all The details...)";
+		}
+
+			var c=a*b;
+			var d=c+a;
+			document.getElementById('a1').innerHTML=a;
+			document.getElementById('a2').innerHTML=a;
+			document.getElementById('a3').innerHTML=a;
+			document.getElementById('a4').innerHTML=a;
+			document.getElementById('a5').innerHTML=a;
+			document.getElementById('a6').innerHTML=a;
+			document.getElementById('a7').innerHTML=a;
+			document.getElementById('a8').innerHTML=a;
+			document.getElementById('a9').innerHTML=a;
+			document.getElementById('a0').innerHTML=a;
+
+			document.getElementById('b1').innerHTML=c;
+			document.getElementById('b2').innerHTML=c;
+			document.getElementById('b3').innerHTML=c;
+			document.getElementById('b4').innerHTML=c;
+			document.getElementById('b5').innerHTML=c;
+			document.getElementById('b6').innerHTML=c;
+			document.getElementById('b7').innerHTML=c;
+			document.getElementById('b8').innerHTML=c;
+			document.getElementById('b9').innerHTML=c;
+			document.getElementById('b0').innerHTML=c;
+
+
+			document.getElementById('c1').innerHTML=d;
+			document.getElementById('c2').innerHTML=d;
+			document.getElementById('c3').innerHTML=d;
+			document.getElementById('c4').innerHTML=d;
+			document.getElementById('c5').innerHTML=d;
+			document.getElementById('c6').innerHTML=d;
+			document.getElementById('c7').innerHTML=d;
+			document.getElementById('c8').innerHTML=d;
+			document.getElementById('c9').innerHTML=d;
+			document.getElementById('c0').innerHTML=d;
+
+			var dep=a*10;
+			var int=c*10;
+			var ern=d*10;
+			var prf=ern-dep;
+			document.getElementById('id').innerHTML=dep;
+			document.getElementById('id2').innerHTML=int;
+			document.getElementById('id3').innerHTML=ern;
+			document.getElementById('id4').innerHTML=prf;
+			
+		}
+		function fun2()
+		{
+			
+
+			document.getElementById('print').innerHTML="";
+			document.getElementById('print1').innerHTML="";
+
+		}
+		function im()
+	{
+		document.getElementById('im1').setAttribute("src","img4.jpeg");
+
+	}
+	function im2()
+	{
+		document.getElementById('im1').setAttribute("src","img5.jpeg");
+
+	}function im3()
+	{
+		document.getElementById('im2').setAttribute("src","img4.jpeg");
+
+	}
+	function im4()
+	{
+		document.getElementById('im2').setAttribute("src","img3.jpeg");
+
+	}
+	function q()
+	{
+		document.getElementById('p').setAttribute("src","img1.jpeg");
+
+	}
+	function r()
+	{
+		document.getElementById('p').setAttribute("src","img2.jpeg");
+
+	}
+	function q1()
+	{
+		document.getElementById('p1').setAttribute("src","img2.jpeg");
+
+	}
+	function r1()
+	{
+		document.getElementById('p1').setAttribute("src","img1.jpeg");
+
+	}
+	</script>
+</head>
+<body>
+	<div>
+	<div class="header">
+		<img src="img2.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p" onmouseover="q()" onmouseleave="r()">
+		<h2 style="font-size: 80px;font-style: oblique;color: grey;" class="font"><ins>ABC Pvt.,Ltd.</ins></h2>  <br>  "Your Trusted Partner..."   <br>Hope is not a Financial Plan....!  
+		 <img src="img1.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p1" onmouseover="q1()" onmouseleave="r1()">
+	</div>
+	
+
+	<div class="navbar">
+
+		<div class="navbar1" style="text-align: center;">
+			<br>
+			<div id="google_translate_element" style="border: 1px ;background: mediumblue;"></div>
+		</div>
+		<div style="background: royalblue;font-style: italic;font-size:20px; "><h2><marquee>"An Investment in Knowledge pays the best interest...!!"</marquee></h2></div>
+		<div class="navbar3" style="text-align: center;">
+			<br><br>
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Acheivements</a>
+			<a href="">Contacts</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<br><br><br>
+			<img src="img5.jpeg" width="90%" style="margin-left: 5%;" id="im1" onmouseover="im()" onmouseleave="im2()"><br><br><br>
+			<a href="agecal.html">Age Calculator</a><br><br><br><br><br>
+			<a href="emi.html">EMI Calculator</a><br><br><br><br><br>
+			<a href="sim.html">Simple Interest Calculator</a><br><br><br><br><br>
+			<a href="comp.html">Compound Interest Calculator</a><br><br><br><br><br>
+			<img src="img3.jpeg" width="90%" style="margin-left: 5%;" id="im2" onmouseover="im3()" onmouseleave="im4()">
+			<br><br><br><br><br><br><br>
+<div class="quot"><h2>"Do not focus on money..</h2><h1>instead FOCUS on a PROBLEM...!"</h1></div>
+		</div>
+		<div class="main">
+<br><br><br><br><br>
+			<form class="frm">
+				<br><br><ins style="color: springgreen;font-size: 40px;">Simple Interest Calculator</ins><br><br><br>
+	Enter Amount:<input type="text" name="" id="x"><br><br>
+
+	Choose Percetage:<select id="y">
+	<option value="">--Select--</option>
+	<option value="0.05">5%</option>
+	<option value="0.1">10%</option>
+	<option value="0.15">15%</option>
+	</select><br><br>
+	<input type="button" name="" value="Submit" onclick="fun()" class="but">
+	<input type="reset" name="" value="Reset" onclick="fun2()" class="but">
+	<p id="print1"></p>
+</form>
+
+<h4 id="print"></h4>
+
+			</div></div>
+			<div class="foot"><h2>You are the Root of your Financial Success </h2><h1>Or Failure..,</h1>
+</div>
+			<div class="footer">Copyright@2017--Abc.advisors.co.in</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>

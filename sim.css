@@ -1,0 +1,167 @@
+.header
+{
+	background: darkblue;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	font-size: 40px;
+	color: red;
+	border:3px solid black;
+}
+.header:hover
+{
+	color: green;
+}
+.font:hover
+{
+	
+	background: yellow;
+}
+
+.navbar
+{
+	display: flex;
+	border:3px solid black;
+}
+.navbar1
+{
+	background: blue;
+	flex: 35%;
+	height: 100px;
+	
+	
+}
+.navbar2
+{
+	background-color: purple;
+	padding: 20px;
+	flex: 20%;
+	height: 100px;
+	background: purple;
+}
+.navbar3
+{
+	background: blue;
+	flex: 45%;
+	height: 100px;
+
+
+}
+.navbar3>a
+{
+	font-size: 20px;
+	border-radius: 10px;
+	border:1px solid black;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	color: darkred;
+	font-style: oblique;
+	background: lightblue;
+}
+.navbar3>a:hover
+{
+	background: dodgerblue;
+}
+
+.row
+{
+	display: flex;
+	border:3px solid black;
+}
+.side
+{
+	flex: 30%;
+	height: 1300px;
+	background: midnightblue;
+}
+.side>a
+{
+	border:2px solid aqua;
+	padding: 10px;
+	text-decoration: none;
+	color: red;
+}
+.side>a:hover
+{
+	background: slateblue;
+}
+.main
+{
+	flex: 70%;
+	height: 1300px;
+	background: cornflowerblue;
+	text-align: center;
+}
+.frm
+{
+	border:2px solid black;
+	text-align: center;
+	width: 70%;
+	height:350px;border-radius: 20px;
+	margin-left: 20%;
+	font-size: 20px;
+	background: midnightblue;
+	color: grey;
+}
+.but
+{
+	background: goldenrod;
+	border-radius: 30px;
+	width: 30%;
+	height: 40px;
+	font-size: 18px;
+}
+.but:hover
+{
+	background: pink;
+}
+.quot
+{
+	background: black;
+	color: white;
+	padding: 14px;
+	text-align: center;
+}
+.tbl
+{
+background: lightcyan;
+text-align: center;
+margin-left: 15%;
+}
+.tbl2
+{
+background: lightcyan;
+text-align: center;
+margin-left: 25%;
+}
+.tbr
+{
+	background: lightblue;
+	font-size: 30px;
+}
+.foot
+{
+	background: darkblue;
+	padding: 20px;
+	color: grey;
+	text-align: center;
+	border:3px solid black;
+}
+.foot>h2:hover
+{
+	color: yellow;
+	font-size:30px;
+}
+.foot>h1:hover
+{
+	color: yellow;
+	font-size: 40px;
+}
+.footer
+{
+	background: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}

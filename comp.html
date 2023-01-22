@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="comp.css">
+	<script type="text/javascript">
+	function fun()
+	{
+		var a=document.getElementById('x').value;
+		var z=document.getElementById('x2').value;
+		z=+z;
+		a=+a;
+		if (a!="" && z!="")
+		{
+		document.getElementById('y').innerHTML="<table border='2' cellpadding='10px' cellspacing='0px' class='tbl'><tr class='tbr'><td>S.no</td><td>Amount</td><td>Interest Amount</td><td>Total Amount</td></tr><tr><td>1</td><td id='x4'></td><td id='a'></td><td id='a1'></td></tr><tr><td>2</td><td id='x5'></td><td id='b'></td><td id='b2'></td></tr><tr><td>3</td><td id='x6'></td><td id='c'></td><td id='c2'></td></tr><tr><td>4</td><td id='x7'></td><td id='d'></td><td id='d2'></td></tr><tr><td>5</td><td id='x8'></td><td id='e'></td><td id='e2'></td></tr><tr><td>6</td><td id='x9'></td><td id='f'></td><td id='f2'></td></tr><tr><td>7</td><td id='x0'></td><td id='g'></td><td id='g2'></td></tr><tr><td>8</td><td id='xx'></td><td id='h'></td><td id='h2'></td></tr><tr><td>9</td><td id='xy'></td><td id='i'></td><td id='i2'></td></tr><tr><td>10</td><td id='xz'></td><td id='j'></td><td id='j2'></td></tr></table> <br><br> <table border='1' cellpadding='10px' cellspacing='0px' class='tbl2'><tr class='tbr'><td>Total amount Invested</td><td id='id1'></td></tr><tr><td>Net Interest Value </td><td id='id2'></td></tr><tr><td>Net Amount Earned</td><td id='id3'></td></tr><tr><td>Profit Earned</td><td id='id4'></td></tr></table>";
+		document.getElementById('y1').innerHTML="";
+	}
+	else
+		{
+			document.getElementById('y1').innerHTML="(Please Fill all The details...)";
+		}
+		document.getElementById('x4').innerHTML=a;
+		document.getElementById('x5').innerHTML=a;		
+		document.getElementById('x6').innerHTML=a;
+		document.getElementById('x7').innerHTML=a;
+		document.getElementById('x8').innerHTML=a;
+		document.getElementById('x9').innerHTML=a;
+		document.getElementById('x0').innerHTML=a;
+		document.getElementById('xx').innerHTML=a;
+		document.getElementById('xy').innerHTML=a;
+		document.getElementById('xz').innerHTML=a;
+		var int=a*z;
+		var total=int+a;
+		document.getElementById('a').innerHTML=int.toFixed(2);
+		document.getElementById('a1').innerHTML=total.toFixed(2);
+
+		var b=total+a;
+		var int2=b*z;
+		var total2=b+int2;
+		document.getElementById('b').innerHTML=int2.toFixed(2);
+		document.getElementById('b2').innerHTML=total2.toFixed(2);
+
+		var b2=total2+a;
+		var int3=b2*z;
+		var total3=b2+int3;
+		document.getElementById('c').innerHTML=int3.toFixed(2);
+		document.getElementById('c2').innerHTML=total3.toFixed(2);
+
+		var b3=total3+a;
+		var int4=b3*z;
+		var total4=b3+int4;
+		document.getElementById('d').innerHTML=int4.toFixed(2);
+		document.getElementById('d2').innerHTML=total4.toFixed(2);
+
+		var b4=total4+a;
+		var int5=b4*z;
+		var total5=b4+int5;
+		document.getElementById('e').innerHTML=int5.toFixed(2);
+		document.getElementById('e2').innerHTML=total5.toFixed(2);
+
+		var b5=total5+a;
+		var int6=b5*z;
+		var total6=b5+int6;
+		document.getElementById('f').innerHTML=int6.toFixed(2);
+		document.getElementById('f2').innerHTML=total6.toFixed(2);
+
+		var b6=total6+a;
+		var int7=b6*z;
+		var total7=b6+int7;
+		document.getElementById('g').innerHTML=int7.toFixed(2);
+		document.getElementById('g2').innerHTML=total7.toFixed(2);
+
+		var b7=total7+a;
+		var int8=b7*z;
+		var total8=b7+int8;
+		document.getElementById('h').innerHTML=int8.toFixed(2);
+		document.getElementById('h2').innerHTML=total8.toFixed(2);
+
+		var b8=total8+a;
+		var int9=b8*z;
+		var total9=b8+int9;
+		document.getElementById('i').innerHTML=int9.toFixed(2);
+		document.getElementById('i2').innerHTML=total9.toFixed(2);
+
+		var b9=total9+a;
+		var int0=b9*z;
+		var total0=b9+int0;
+		document.getElementById('j').innerHTML=int0.toFixed(2);
+		document.getElementById('j2').innerHTML=total0.toFixed(2);
+		
+
+		var ab=a*10;
+		document.getElementById('id1').innerHTML=ab;
+		var bc=int+int2+int3+int4+int5+int6+int6+int8+int9+int0;
+		document.getElementById('id2').innerHTML=bc.toFixed(2);
+		var cd=total+total2+total3+total4+total5+total6+total7+total8+total9+total0;
+		document.getElementById('id3').innerHTML=cd.toFixed(2);
+		var de=cd-ab;
+		document.getElementById('id4').innerHTML=de.toFixed(2);
+	}
+	function fun2()
+	{
+		document.getElementById('y').innerHTML="";
+		document.getElementById('y1').innerHTML="";
+	}
+	function im()
+	{
+		document.getElementById('im1').setAttribute("src","img4.jpeg");
+
+	}
+	function im2()
+	{
+		document.getElementById('im1').setAttribute("src","img5.jpeg");
+
+	}function im3()
+	{
+		document.getElementById('im2').setAttribute("src","img4.jpeg");
+
+	}
+	function im4()
+	{
+		document.getElementById('im2').setAttribute("src","img3.jpeg");
+
+	}
+	function q()
+	{
+		document.getElementById('p').setAttribute("src","img1.jpeg");
+
+	}
+	function r()
+	{
+		document.getElementById('p').setAttribute("src","img2.jpeg");
+
+	}
+	function q1()
+	{
+		document.getElementById('p1').setAttribute("src","img2.jpeg");
+
+	}
+	function r1()
+	{
+		document.getElementById('p1').setAttribute("src","img1.jpeg");
+
+	}
+
+
+</script>
+</head>
+<body>
+	<div>
+	<div class="header">
+		<img src="img2.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p" onmouseover="q()" onmouseleave="r()">
+		<h2 style="font-size: 80px;font-style: oblique;color: grey;" class="font"><ins>ABC Pvt.,Ltd.</ins></h2>  <br>  "Your Trusted Partner..."   <br>Hope is not a Financial Plan....!  
+		 <img src="img1.jpeg" width="10%" style="border:2px solid red;height: 120px;border-radius: 99px;" id="p1" onmouseover="q1()" onmouseleave="r1()">
+	</div>
+	
+
+	<div class="navbar">
+
+		<div class="navbar1" style="text-align: center;">
+			<br>
+			<div id="google_translate_element" style="border: 1px ;background: mediumblue;"></div>
+		</div>
+		<div style="background: royalblue;font-style: italic;font-size:20px; "><h2><marquee>"An Investment in Knowledge pays the best interest...!!"</marquee></h2></div>
+		<div class="navbar3" style="text-align: center;">
+			<br><br>
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Acheivements</a>
+			<a href="">Contacts</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="side">
+			<br><br><br>
+			<img src="img5.jpeg" width="90%" style="margin-left: 5%;" id="im1" onmouseover="im()" onmouseleave="im2()"><br><br><br>
+			<a href="agecal.html">Age Calculator</a><br><br><br><br><br>
+			<a href="emi.html">EMI Calculator</a><br><br><br><br><br>
+			<a href="sim.html">Simple Interest Calculator</a><br><br><br><br><br>
+			<a href="comp.html">Compound Interest Calculator</a><br><br><br><br><br>
+			<img src="img3.jpeg" width="90%" style="margin-left: 5%;" id="im2" onmouseover="im3()" onmouseleave="im4()">
+			<br><br><br><br><br><br><br>
+<div class="quot"><h2>"Do not focus on money..</h2><h1>instead FOCUS on a PROBLEM...!"</h1></div>
+		</div>
+		<div class="main">
+			<br><br><br><br>
+			<form class="frm">
+				<br><br><ins style="color: springgreen;font-size: 40px;">Compound Interest Calculator</ins><br><br>
+	Enter Amount:<input type="text" name="" id="x"><br><br>
+	Choose Your Percentage:<select id="x2">
+		<option value="">--Select--</option>
+		<option value="0.05">5%</option>
+		<option value="0.1">10%</option>
+		<option value="0.15">15%</option>
+	</select><br><br>
+	<input type="button" name="" value="Submit" onclick="fun()" class="but">
+	<input type="reset" name="" value="Reset" onclick="fun2()" class="but">
+	<p id="y1"></p>
+</form>
+<h4 id="y"></h4>
+			</div></div>
+			<div class="foot"><h2>You are the Root of your Financial Success </h2><h1>Or Failure..,</h1>
+</div>
+			<div class="footer">Copyright@2017--Abc.advisors.co.in</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
